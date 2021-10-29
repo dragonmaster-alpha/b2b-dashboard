@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .menu-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu-trigger {
+    background: #0042AC;
+    color: white;    
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    border: none;
+    vertical-align: middle;
+    transition: box-shadow 0.4s ease;
+    margin-left: auto; /* Strictly for positioning */
+  }
+  
+  .menu-trigger:hover {
+    color:tomato;
+  }
+  
+  .menu-trigger span {
+    font-weight: 700;
+    vertical-align: middle;
+    font-size: 14px;
+    margin: 0 10px;
+  }
+      
+  .menu {
+    background: #ffffff;
+    border-radius: 8px;
+    position: absolute;
+    top: 130px;
+    right: 0;
+    width: 140px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  }
+  
+  .menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .menu li {
+    text-decoration: none;
+    color: #333333;
+    padding: 15px 20px;
+    display: block;
+  }
+  
+  .menu li:hover{
+      background:#0042AC;
+      color: white;
+  }
+
+  .custom-select{
+    height: 30px !important;
+    font-size: 12px !important;
+  }
+
+  .language-select{
+    margin-left: 75%;
+  }
+
+  .nc-icon.nc-stre-down{
+    color: white !important;
+    margin: 0 !important;
+    font-size: 25px;
+  }
+  button.arrow{
+    background: #0042AC;
+    border: none !important;
+  }
+
+  .profile_row{            
+    margin-bottom: 25px;        
+  }  
+  .profile_input{
+    width: 70%;    
+    height: 38px;   
+    border: 1px solid #D0DCEF;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px #F5F5F6;
+  }
+  .profile_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 22%;
+    margin-top: 10px;
+  }
+  .profile_save_btn{
+    background: #0042AC !important;
+    width: 100px !important;
+    height: 30px !important;
+    color: #ffffff !important;
+    line-height: 14px !important;
+    margin-left: 20px !important;
+    margin-top: 20px !important;
+  }

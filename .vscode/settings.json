@@ -1,0 +1,12 @@
+{
+    "eslint.alwaysShowStatus": true,
+    "eslint.debug": true,
+    "eslint.lintTask.enable": true,
+    "eslint.format.enable": true,
+    "eslint.onIgnoredFiles": "warn",
+    "eslint.trace.server": "off",
+    "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+    },
+    "eslint.validate": ["javascript"]
+}

@@ -1,0 +1,65 @@
+image: docker
+
+variables:
+  REPOSITORY_URL: 593328819491.dkr.ecr.eu-west-3.amazonaws.com/b2b-dashboard
+
+services:
+  - docker:dind
+
+before_script:
+  - apk add --no-cache curl jq python3 py-pip
+  - pip install awscli
+
+stages:
+  - build
+  - deploy
+
+.build:
+  stage: build
+  script:
+    - $(aws ecr get-login --no-include-email --region eu-west-3)
+    - apk add --no-cache npm
+    - npm install
+    - npm run build || true
+    - docker build -t $REPOSITORY_URL:$CI_COMMIT_REF_NAME .
+    - docker push $REPOSITORY_URL:$CI_COMMIT_REF_NAME
+  only:
+    - test
+    - staging
+    - tags
+
+build-test:
+  extends: .build
+  variables:
+    REACT_APP_DASHBOARD_BASE_URL: https://dashboard-view.test.planetwatch.io/api
+  only:
+    - test
+
+build-prod:
+  extends: .build
+  variables:
+    REACT_APP_DASHBOARD_BASE_URL: https://dashboard-view.planetwatch.io/api
+  only:
+    - tags
+
+deploy-test:
+  stage: deploy
+  script:
+    - curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl && chmod +x ./kubectl && mv ./kubectl /usr/local/bin/kubectl
+    - aws eks --region eu-west-3 update-kubeconfig --name planetwatch
+    - kubectl apply -f kubernetes-deployment-test.yml
+    - kubectl -n pw-test rollout restart deployment b2b-dashboard
+  only:
+    - test
+
+deploy-prod:
+  stage: deploy
+  script:
+    - curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl && chmod +x ./kubectl && mv ./kubectl /usr/local/bin/kubectl
+    - aws eks --region eu-west-3 update-kubeconfig --name planetwatch
+    - kubectl apply -f kubernetes-deployment-prod.yml
+    - kubectl -n pw-prod rollout restart deployment b2b-dashboard
+  only:
+    - tags
+
+

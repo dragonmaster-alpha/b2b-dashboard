@@ -1,0 +1,45 @@
+
+.index_input{
+    width: 90%;    
+    height: 38px;   
+    border: none; 
+    padding-right: 3px;
+}
+
+.fade.set_index .modal-dialog .modal-content{
+    width: 350px !important;
+    margin-left:100px;
+}
+
+.reset_input{
+    width: 100%;
+    border: 1px solid #D0DCEF;
+    box-shadow: 3px 3px 3px 3px #F5F5F6;
+    border-radius: 5px;
+}
+
+.index_save_btn{
+    background: #0042AC !important;
+    width: 100px !important;
+    height: 30px !important;
+    color: #ffffff !important;
+    line-height: 14px !important;
+    margin-left: 100px !important;
+    margin-top: 15px !important;
+}
+
+.index_row{
+    display: flex;
+    border: 1px solid #D0DCEF;
+    height: 40px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px #F5F5F6;
+}
+
+.option_status_img{
+    width: 13px;
+    height: 13px;
+    margin-left: 5px;
+    margin-top: 12px;
+  }

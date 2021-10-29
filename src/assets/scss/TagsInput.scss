@@ -1,0 +1,68 @@
+$primary-color: #1df9ba;
+$primary-bg-color:#0042AC;
+$primary-text-color: #222;
+$primary-border-color: #e1e1e1;
+$error-color: #ff5964;
+$ff-primary: 'Roboto', sans-serif;
+.tags-input {   
+
+    &.active {
+
+      .tags-input__wrapper {
+        border-color: $primary-text-color;
+      }
+    }
+
+    label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    &__wrapper {
+      
+      padding-left: 10px;
+      transition: border-color .3s ease;
+    }
+
+    &__tags {
+      display: flex;
+      flex-wrap: wrap;
+
+      .tag {
+        background-color: $primary-bg-color;        
+        border-radius: 4px;        
+        margin-right: 5px;
+        margin-bottom: 5px;
+        margin-top: 2px;
+        transition: background-color .3s ease;
+        color: white;
+        padding-left: 5px;
+
+        i {
+          margin-left: 5px;
+          cursor: pointer;
+        }
+
+        &:hover {
+          background-color: darken($primary-bg-color, 10);
+        }
+      }
+
+      input {
+        border: 0;
+        outline: 0;
+        margin-bottom: 4px;
+        padding: 0;
+        flex: 1;
+        min-width: 80px;
+      }
+    }
+  } 
+
+  .error {
+    padding: 5px 0;
+    color: $error-color;
+    font-size: 12px;
+  }
+

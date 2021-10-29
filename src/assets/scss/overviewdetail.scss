@@ -1,0 +1,143 @@
+.breakpoint__medium-only {
+    .timeline_div{
+        display: flex;
+        flex-direction: column;
+        width: 750px;        
+    }
+    .button_div{
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+    }
+    .timeline_detail{
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 5px;
+    }
+    .button_area{        
+        margin-top: 5px;
+    }
+    .hour{
+        color: #9D9D9D;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .interval{
+        color: #9D9D9D;
+        margin-right: 5px;
+        font-size: 12px;
+        margin-top: 5px;
+    }    
+    .timeline_title{
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .camera_span{
+        border-left: 3px solid;
+        margin-right: 20px;
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    .venue_span{
+        border-left: 2px solid yellowgreen;
+        padding-left: 10px;
+        font-size: 12px;
+    }
+    .datepicker{
+        height: 25px;
+        border: 1px solid #D0DCEF;
+        border-radius: 5px;
+        margin-top: 5px;
+        display: flex;        
+        font-size: 12px;
+    }
+    .nc-stre-down{
+        margin-right: 10px;
+        margin-top: 7px;
+        width: 10px !important;
+        height: 10px !important;
+        font-size: 12px !important;
+    }
+    .fa-calendar-alt{
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    .form-control{
+        height: 23px !important;        
+        border: none !important;        
+    }
+
+}
+
+.breakpoint__small-down {
+    .timeline_div{
+        display: flex;
+        flex-direction: column;        
+        width: 500px;
+    }
+    .button_div{
+        display: flex;
+        justify-content: space-between;
+        height: 30px;
+    }
+    .timeline_detail{
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 5px;
+    }
+    .button_area{        
+        margin-top: 5px;
+    }
+    .hour{        
+        color: #9D9D9D;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .interval{
+        color: #9D9D9D;
+        margin-right: 5px;
+        font-size: 10px;
+        margin-top: 5px;
+    }    
+    .timeline_title{
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .camera_span{
+        border-left: 2px solid;
+        margin-right: 10px;
+        padding-left: 5px;
+        font-size: 10px;
+    }
+    .venue_span{
+        border-left: 1px solid yellowgreen;
+        padding-left: 5px;
+        font-size: 10px;
+    }
+    .datepicker{
+        height: 25px;
+        border: 1px solid #D0DCEF;
+        border-radius: 5px;
+        margin-top: 5px;
+        display: flex;        
+    }
+    .nc-stre-down{
+        margin-right: 10px;
+        margin-top: 7px;
+        width: 8px !important;
+        height: 8px !important;
+        font-size: 10px !important;
+    }
+    .fa-calendar-alt{
+        margin-left: 5px;
+        margin-top: 5px;
+        font-size: 10px;
+    }
+    .form-control{
+        height: 23px !important;        
+        border: none !important;        
+        font-size: 10px;
+    }
+
+}

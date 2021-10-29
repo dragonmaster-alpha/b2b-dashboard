@@ -1,0 +1,506 @@
+
+.border-color {
+    border-color: blue !important;
+}
+.breakpoint__large-up {
+    // .width-600px{
+    //     width: 600px !important;
+    // }
+
+    // .width-900px{
+    //     width: 900px !important;
+    // }
+    // .width-300px{
+    //     width: 300px !important;
+    // }
+    .height1{
+        height: 280px !important;
+    }
+    .height2{
+        height:300px !important;
+    }
+    .height3 {
+        height:400px !important;
+    }
+
+    .venue_content{                
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        color: #636363;
+        padding: 40px 60px 40px 60px;
+    }
+    .sensor_view{
+        display: flex;                
+    }
+    .state{
+        width: 270px;
+        height: 270px;
+    }
+    .venue_name{
+        margin-left: 15px !important;
+        font-size: 20px !important;
+        font-weight: bold !important;
+    }
+    .state_img{
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+    .index, .condition{
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .label{
+        font-size: 14px;
+        margin-bottom: -3px;
+    }
+    .symbol_img{
+        width: 13px;
+        height: 13px;
+        margin-left: 10px;
+    }
+    .temperature{
+        margin-left: -70px;
+        margin-top: -4px;
+        font-size: 15px;
+    }
+    .indexvalue{
+        margin-right: 30px;
+        font-weight: bold;
+    }
+    .humidity{
+        margin-left: -95px;
+        margin-top: -4px;
+        font-size: 15px;
+    }    
+    .co2{
+        margin-left: -100px;
+        margin-top: -4px;
+        font-size: 15px;
+    }
+    .tvocs{
+        margin-left: -80px;
+        margin-top: -4px;
+        font-size: 15px;
+    }
+    .pm{
+        margin-left: -90px;
+        margin-top: -4px;
+        font-size: 15px;
+    }
+    .light{
+        margin-left: -135px;
+        margin-top: -4px;
+        font-size: 15px;
+    }
+    .noise{
+        margin-left: -113px;
+        margin-top: -4px;
+        font-size: 15px;
+    }
+    .sensor_group{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 270px;
+        overflow-y: scroll;
+    }
+    .sensorList_div{
+        display: flex;
+        margin-left: 40px;
+        width: 100%;
+    }
+    .left_btn, .right_btn{
+        border: none;
+        background: transparent;
+        color: blue; 
+        display:none;
+        height: 50px;
+        margin-top: 155px;       
+    }
+    .nc-icon{
+        font-size: 40px;
+    }
+    .sensor_card{
+        width: 230px;
+        height: 80px;
+        padding-top: 15px;
+        color: #9D9D9D;
+        margin: 6px;
+        cursor: pointer;
+        max-width: 350px;
+        margin: 10px 10px 5px 10px;
+        border-radius: 15px !important;
+        background-color: #FFFFFF;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: .50rem;
+    }
+    .sensor_card_border {
+        border-width:1px;
+        border-color: #0042AC;
+    }
+    bold {
+        font-weight: bold;
+        color: rgb(37, 35, 35);
+    }
+    .sensor_row{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+    .sensor_edit{
+        margin-right: 5px;
+        width: 15px;
+        height: 15px;
+        float: right;
+        cursor: pointer;
+    }
+    .card_div{
+        display: flex;
+        flex-direction: column;
+    }
+    .part_top{
+        justify-content: flex-start;
+    }
+    .part_bottom{
+        justify-content: flex-start;
+    }
+    .lamp, .sensor{
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    .camera_name{
+        font-size: 14px;
+    }
+    .camera_number{
+        margin-left: 45px;
+        font-size: 16px;
+    }
+    .symbol{
+        margin-top: 4px;
+        width: 15px;
+        margin-right: 5px;
+        height: 15px;
+        float: right;
+    }
+    .timeline_div{
+        display: flex;
+        flex-direction: column;     
+        padding-left: 10px;   
+        margin-top:30px;
+    }
+    .button_div{
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+    }
+    .timeline_detail{
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 15px;
+    }
+    .button_area{        
+        margin-top: -30px;
+    }
+    .hour{
+        margin-right: 90px;
+        color: #9D9D9D;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    .interval{
+        color: #9D9D9D;
+        margin-right: 5px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    .btn{
+        width: 150px;
+        height: 30px;
+        border-radius: 30px;
+        margin-right: 30px;
+        background: #104C98;
+        color: white;
+        font-size: 20px;
+        line-height: 5px;
+        display: inline-block;
+    }
+    .timeline_title{
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .camera_span{
+        border-left: 3px solid;
+        margin-right: 40px;
+        padding-left: 10px;
+    }
+    .venue_span{
+        border-left: 2px solid yellowgreen;
+        padding-left: 10px;
+    }
+    .chart_div{
+        text-align: center;
+        margin-top: 0px;
+        padding: 10px 10px;
+    }
+    .chart{
+        width: calc(50% - 50px);
+        height: 370px;
+        margin-top: 50px;
+        padding: 10px 10px 10px 10px;
+        border: 1px solid #E9ECEF;
+        border-radius: 2px;
+        display: inline-block;
+        background-color: white;
+        text-align: left;
+    }
+    .chart2{
+        width: calc(50% - 50px);
+        height: 370px;
+        margin-left: 100px;
+        padding: 10px 10px 10px 10px;
+        margin-top: 50px;
+        border: 1px solid #E9ECEF;
+        background-color: white;
+        border-radius: 2px;
+        display: inline-block;
+        text-align: left;
+    }
+    .form-control{
+        height: 28px !important;        
+        border: none !important;     
+    }
+    .datepicker{
+        height: 30px;
+        border: 1px solid #D0DCEF;
+        border-radius: 5px;
+        margin-top: 5px;
+        display: flex;
+
+        .form-control {
+            width: 210px;
+        }
+
+        .datepicker-icon.nc-icon {
+            color: #636363 !important;
+            margin: auto 0 !important;
+            visibility: collapse;
+        }
+    }
+    .nc-stre-down{
+        margin-right: 10px;
+        margin-top: 7px;
+        width: 10px !important;
+        height: 10px !important;
+        font-size: 15px !important;
+    }
+    .fa-calendar-alt{
+        margin: auto 5px;
+    }
+    .chartjs-render-monitor{
+        height: 350px !important;
+        width: 100% !important;
+    }
+    .chartjs-size-monitor{
+        height: 250px !important;
+    }
+    .chart-container{
+        width: 100% !important;
+        height: 250px !important;
+    }
+
+}
+
+.breakpoint__medium-only {
+    .card {
+        height:200px;
+    }
+.button-field {
+    --c: #0042AC;
+      color: white;
+      font-size: 8px;
+      border: 0.3em solid var(--c);
+      background-color: var(--c);
+      border-color: var(--c);
+      border-radius: 0.5em;
+      width: 12em;
+      height: 2em;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-family: sans-serif;
+      letter-spacing: 0.1em;
+      text-align: center;
+      line-height: 2.7em;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      transition: 1s;
+      margin: 0.4em;
+  }
+  
+    .venue_list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        padding: 10px;
+    }
+    .venue_card{
+        margin-top: 20px;
+        width: 750px;
+        height: 150px;
+        border-radius: 30px !important;
+    }
+    .sensor_name{
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    .main_area{
+        padding: 10px 15px 10px 15px;
+        display: flex;
+    }
+    .CircularProgressbar{
+        width: 70px;
+        height: 70px;
+    }
+    .CircularProgressbar-text{
+        font-size: 35px !important;
+    }
+    .symbol_img{
+        width: 15px;
+        height: 15px;     
+    }
+    .unit{
+        text-align: center;
+        margin: -8px 5px 0 5px;
+    }
+    .temp, .index{
+        font-size: 13px;
+    }
+    .number{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .CircularProgressbar.a1 .CircularProgressbar-path{
+        stroke: #F5AA0F !important;
+    }
+    .CircularProgressbar.b1 .CircularProgressbar-path{
+        stroke: #E83037 !important;
+    }
+    .CircularProgressbar.c1 .CircularProgressbar-path{
+        stroke: #FCA606 !important;
+    }
+    .CircularProgressbar.d1 .CircularProgressbar-path{
+        stroke: #64D465 !important;
+    }
+    .CircularProgressbar-text{
+        fill: black !important;
+        font-weight: bold !important;
+    }
+}
+
+.breakpoint__small-down {
+    .card {
+        height:120px;
+    }
+.button-field {
+    --c: #0042AC;
+      color: white;
+      font-size: 5px;
+      border: 0.3em solid var(--c);
+      background-color: var(--c);
+      border-color: var(--c);
+      border-radius: 0.5em;
+      width: 12em;
+      height: 3em;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-family: sans-serif;
+      letter-spacing: 0.1em;
+      text-align: center;
+      line-height: 2.7em;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      transition: 1s;
+      margin: 1.8em;
+  }
+    .venue_list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    .venue_card{
+        margin-top: 20px;
+        width: 260px;
+        height: 110px;
+        border-radius: 20px !important;
+    }
+    .sensor_name{
+        margin-top: 5px;
+        margin-left: 5px;
+        font-size: 15px;
+    }
+    .main_area{
+        padding: 5px 10px 5px 10px;
+        display: flex;
+    }
+    .CircularProgressbar{
+        width: 50px;
+        height: 50px;
+    }
+    .CircularProgressbar-text{
+        font-size: 25px !important;
+    }
+    .symbol_img{
+        width: 10px;
+        height: 10px;     
+    }
+    .unit{
+        text-align: center;
+        margin: -8px 10px 0px 10px;
+    }
+    .temp, .index{
+        font-size: 10px;
+    }
+    .number{
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .CircularProgressbar.a1 .CircularProgressbar-path{
+        stroke: #F5AA0F !important;
+    }
+    .CircularProgressbar.b1 .CircularProgressbar-path{
+        stroke: #E83037 !important;
+    }
+    .CircularProgressbar.c1 .CircularProgressbar-path{
+        stroke: #FCA606 !important;
+    }
+    .CircularProgressbar.d1 .CircularProgressbar-path{
+        stroke: #64D465 !important;
+    }
+    .CircularProgressbar-text{
+        fill: black !important;
+        font-weight: bold !important;
+    }
+}
+
+.btn.btn-primary:not(:hover) {
+    color: white !important;
+}
